@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Company Site</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #2a2a2a;
+            color: white;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: underline;
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .news-item {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .coming-soon {
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .sections {
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 20px;
+            }
+            .coming-soon {
+                position: static;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="coming-soon">Coming soon</div>
+        <div class="logo">COMPANY</div>
+
+        <div class="sections">
+            <div class="contact">
+                <h2>Contact</h2>
+                <a href="mailto:contact@company.com">contact@company.com</a>
+                <a href="/careers">Join our team</a>
+            </div>
+
+            <div class="press">
+                <h2>Press</h2>
+                <div class="news-item">
+                    <div class="date">OCT 15, 2024</div>
+                    <div class="title">Company Announces Major Innovation in Technology</div>
+                </div>
+
+                <div class="news-item">
+                    <div class="date">SEP 30, 2024</div>
+                    <div class="title">Press Release: Launch of New Research Initiative</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
